@@ -12,14 +12,8 @@
 }
 
 .navbar-wrapper .navbar {
-   padding-left: 15px;
-   padding-right: 15px;
-}
-
-@media (min-width: 768px) {
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .navbar-default {
@@ -27,6 +21,10 @@
     background-color: #2C3E50;
     padding: 0;
     margin: 0;
+}
+
+.navbar-index {
+    margin-bottom: 50px;
 }
 
 .navbar-default .navbar-brand {
@@ -81,6 +79,16 @@
     color: #00B16A;
 }
 
+.navbar-default .nav li.wp-promotion-link a {
+    color: #00B16A;
+}
+
+.navbar-default .nav li.wp-promotion-link a:hover,
+.navbar-default .nav li.wp-promotion-link a:focus {
+    color: #DADFE1;
+    text-decoration: underline;
+}
+
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #00B16A;
@@ -94,7 +102,18 @@
     background-color: transparent;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) and (max-width: 1000px) {
+.navbar-wrapper .navbar {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+}
+
+@media(min-width:1000px) {
+    .navbar-wrapper {
+    margin-top: 20px;
+    }
+
     .navbar-default {
         padding: 25px 0;
         border: 0;
@@ -123,4 +142,22 @@
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+
+    .navbar-index {
+    background-color: #2C3E50;
+    margin-bottom: 100px;
+    }
+
+    .navbar-default .nav li.wp-promotion-link a {
+    border: 1px solid #00B16A;
+    border-radius: 5px;
+    }
+
+    .navbar-default .nav li.wp-promotion-link a:hover,
+    .navbar-default .nav li.wp-promotion-link a:focus {
+        border: 1px solid #00B16A;
+        border-radius: 5px;
+    }
 }
+
+

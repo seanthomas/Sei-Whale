@@ -1,7 +1,13 @@
-header {
+.header-front-page {
     text-align: center;
     color: #fff;
     background-color: #2C3E50;
+}
+
+.header-front-page p {
+    color: #DADFE1;
+    padding: 25px;
+    font-style: italic;
 }
 
 header .intro-text {
@@ -28,14 +34,34 @@ header .intro-text .intro-heading {
 
 }
 
-@media(min-width:768px) {
+header .glyphicon {
+    margin: 0;
+    padding: 0 15px 0 0;
+}
+
+header ul {
+    padding: 0;
+    margin: 0
+}
+
+header ul li {
+    list-style: none;
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
     header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
+        padding-bottom: 100px;
+}
+}
+
+@media(min-width:1000px) {
+    header .intro-text {
+        padding-top: 200px;
+        padding-bottom: 100px;
     }
 
     header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 38px;
         font-weight: normal;
@@ -43,7 +69,7 @@ header .intro-text .intro-heading {
     }
 
     header .intro-text .intro-heading {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 16px;
         font-style: italic;
@@ -51,3 +77,5 @@ header .intro-text .intro-heading {
         color: #00B16A;
     }
 }
+
+

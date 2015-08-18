@@ -19,6 +19,7 @@ $sage_includes = [
   'lib/titles.php',                // Page titles
   'lib/extras.php',                // Custom functions
   'lib/wp_bootstrap_navwalker.php',// Boostrap Nav Walker Menu
+  'lib/recent-posts.php'           // Recent Posts Widget
 ];
 
 foreach ($sage_includes as $file) {
